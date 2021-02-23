@@ -432,6 +432,8 @@ if (document.body.clientWidth <= 860) {
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+	$(".site-header").addClass("sabit");
+        $(".openNav").addClass("sabit");
     }
 }
 
@@ -1223,6 +1225,7 @@ var home = location.href,
                     $('.iconflat').css('width', '100%').css('height', '100%');
                     $('.openNav').css('height', '100%');
                 }
+		topFunction();
                 $('body').toggleClass('navOpen');
                 $('#main-container,#mo-nav,.openNav').toggleClass('open');
             });
